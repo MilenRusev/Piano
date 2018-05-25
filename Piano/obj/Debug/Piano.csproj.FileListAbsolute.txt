@@ -1,0 +1,10 @@
+D:\Programming\Piano\Piano\bin\Debug\Piano.exe.config
+D:\Programming\Piano\Piano\bin\Debug\Piano.exe
+D:\Programming\Piano\Piano\bin\Debug\Piano.pdb
+D:\Programming\Piano\Piano\obj\Debug\Piano.csprojResolveAssemblyReference.cache
+D:\Programming\Piano\Piano\obj\Debug\Piano.Properties.Resources.resources
+D:\Programming\Piano\Piano\obj\Debug\Piano.csproj.GenerateResource.cache
+D:\Programming\Piano\Piano\obj\Debug\Piano.csproj.CoreCompileInputs.cache
+D:\Programming\Piano\Piano\obj\Debug\Piano.exe
+D:\Programming\Piano\Piano\obj\Debug\Piano.pdb
+D:\Programming\Piano\Piano\obj\Debug\Piano.Body.resources

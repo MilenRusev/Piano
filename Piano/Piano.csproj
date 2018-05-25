@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{141F91B4-E485-4771-94A4-DEE7B8E0A943}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Piano</RootNamespace>
+    <AssemblyName>Piano</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Body.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Body.Designer.cs">
+      <DependentUpon>Body.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StartUp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Body.resx">
+      <DependentUpon>Body.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203458__tesabob2001__a3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203459__tesabob2001__a-5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203460__tesabob2001__a-4.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203461__tesabob2001__a-3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203462__tesabob2001__b4.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203463__tesabob2001__b3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203464__tesabob2001__a5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203465__tesabob2001__a4.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203466__tesabob2001__c-3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203467__tesabob2001__b5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203468__tesabob2001__f3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203469__tesabob2001__f4.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203470__tesabob2001__e3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203471__tesabob2001__e4.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203472__tesabob2001__d4.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203473__tesabob2001__d5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203474__tesabob2001__f-4.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203475__tesabob2001__f-5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203476__tesabob2001__e5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203477__tesabob2001__f-3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203478__tesabob2001__c4-middle-c.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203479__tesabob2001__c3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203480__tesabob2001__c-5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203481__tesabob2001__c-4.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203482__tesabob2001__d-4.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203483__tesabob2001__d-3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203484__tesabob2001__c6.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203485__tesabob2001__c5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203486__tesabob2001__d3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203487__tesabob2001__d-5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203488__tesabob2001__g-3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203489__tesabob2001__f5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203490__tesabob2001__g-5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203491__tesabob2001__g-4.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203492__tesabob2001__g4.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203493__tesabob2001__g3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203494__tesabob2001__piano-chromatic-scale.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203495__tesabob2001__g5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203499__tesabob2001__f-5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203500__tesabob2001__f-4.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203501__tesabob2001__f-3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\203502__tesabob2001__a-3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\a#4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\a4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\b4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\c#4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\c#5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\c4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\c5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\d#4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\d4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\d5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\e4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\f#4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\f4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\g#4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\g4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\as4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\cs4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\cs5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\ds4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\ds5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\e5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\f5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\fs4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\fs5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\g5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\gs4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tones\gs5.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
